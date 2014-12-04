@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <title>PrawnHub</title>
+         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
+        <div class="prawn-container">
+            <img class="prawn" src="img/prawn.jpg" />
+             <audio autoplay loop>
+                <source src="audio/shake.ogg" type="audio/ogg">
+                <source src="audio/shake.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+             </audio> 
+        </div>
+        
+        <div class="shake-container">
+            <p class="shake">Click to Shake!</p>
+        </div>
+        
+        <script>
+            $( document ).click(function() {
+                $( ".prawn" ).effect( "shake" );
+            });
+        </script>
+    </body>
+</html>

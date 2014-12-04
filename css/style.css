@@ -1,0 +1,30 @@
+.prawn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.prawn-container {
+    height: 40em;
+    position: relative;
+}
+
+shake-container {
+    margin-bottom: 5%;
+    height: 90%;
+    position: relative;
+}
+
+.shake {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-family: "Impact", sans-serif;
+}
