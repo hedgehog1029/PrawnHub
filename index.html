@@ -19,6 +19,7 @@
         
         <div class="audio-container">
             <i class="fa fa-volume-up fa-2x" id="mute"></i>
+            <p class="text2">mute audio</p>
         </div>
         
         <div class="prawn-container">
@@ -44,6 +45,14 @@
                 $(".text").addClass("slideRight");
             });
             
+            $("#mute").hover(function() {
+                $(".text2").addClass("slideLeft");
+            });
+            
+            $("#mute").mouseout(function() {
+                $(".text2").removeClass("slideLeft");
+            });
+            
             $(".github").hover(function() {
                 $(".text").text("fork me on github");
                 $(".text").addClass("slideRight");
@@ -61,9 +70,11 @@
                 if (document.getElementById("audio").muted) {
                     document.getElementById("audio").muted=false;
                     document.getElementById("mute").className="fa fa-volume-up fa-2x";
+                    $(".text2").text("mute audio");
                 } else {
                     document.getElementById("audio").muted=true;
                     document.getElementById("mute").className="fa fa-volume-off fa-2x";
+                    $(".text2").text("unmute audio");
                 }
             });
         </script>
