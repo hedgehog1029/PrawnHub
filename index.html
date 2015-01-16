@@ -37,50 +37,52 @@
         </div>
         
         <script>
-            $( document ).click(function() {
-                $( ".prawn" ).effect( "shake" );
-            });
+            $(document).ready(function(){
+                $( document ).click(function() {
+                    $( ".prawn" ).effect( "shake" );
+                });
             
-            $("#m").hover(function() {
-                $(".text").text("buy this song");
-                $(".text").addClass("slideRight");
-            });
+                $("#m").hover(function() {
+                    $(".text").text("buy this song");
+                    $(".text").addClass("slideRight");
+                });
             
-            $("#mute").hover(function() {
-                $(".text2").addClass("slideLeft");
-            });
+                $("#mute").hover(function() {
+                    $(".text2").addClass("slideLeft");
+                });
             
-            $("#mute").mouseout(function() {
-                $(".text2").removeClass("slideLeft");
-            });
+                $("#mute").mouseout(function() {
+                    $(".text2").removeClass("slideLeft");
+                });
             
-            $(".github").hover(function() {
-                $(".text").text("fork me on github");
-                $(".text").addClass("slideRight");
-            });
+                $(".github").hover(function() {
+                    $(".text").text("fork me on github");
+                    $(".text").addClass("slideRight");
+                });
             
-            $("#m, .github").mouseout(function() {
-                $(".text").removeClass("slideRight");
-            });
+                $("#m, .github").mouseout(function() {
+                    $(".text").removeClass("slideRight");
+                });
             
-            $("#m").click(function() {
-                window.location.href="http://www.amazon.com/Shake-It-Off/dp/B00OXE3GEG";
-            });
+                $("#m").click(function() {
+                    window.location.href="http://www.amazon.com/Shake-It-Off/dp/B00OXE3GEG";
+                });
             
-            $(".github").click(function() {
-                window.location.href="https://github.com/hedgehog1029/PrawnHub/";
-            });
+                $(".github").click(function() {
+                    window.location.href="https://github.com/hedgehog1029/PrawnHub/";
+                });
             
-            $( "#mute").click(function() {
-                if (document.getElementById("audio").muted) {
-                    document.getElementById("audio").muted=false;
-                    document.getElementById("mute").className="fa fa-volume-up fa-2x";
-                    $(".text2").text("mute audio");
-                } else {
-                    document.getElementById("audio").muted=true;
-                    document.getElementById("mute").className="fa fa-volume-off fa-2x";
-                    $(".text2").text("unmute audio");
-                }
+                $( "#mute").click(function() {
+                    if (document.getElementById("audio").muted) {
+                        document.getElementById("audio").muted=false;
+                        document.getElementById("mute").className="fa fa-volume-up fa-2x";
+                        $(".text2").text("mute audio");
+                    } else {
+                        document.getElementById("audio").muted=true;
+                        document.getElementById("mute").className="fa fa-volume-off fa-2x";
+                        $(".text2").text("unmute audio");
+                    }
+                });
             });
         </script>
     </body>
